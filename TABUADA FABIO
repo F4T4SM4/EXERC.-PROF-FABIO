@@ -1,0 +1,94 @@
+def tabuada(numero, operacao):
+    print(f"Aqui está sua tabuada do {numero} com a operação '{operacao}':")
+    for x in range(1, 11):
+        if operacao == "+":
+            resultado = numero + x
+            print(f"{numero} + {x} = {resultado}")
+        elif operacao == "-":
+            resultado = numero - x
+            print(f"{x + numero} - {numero} = {(x + numero ) - numero}")
+        elif operacao == "*":
+            resultado = numero * x
+            print(f"{numero} * {x} = {resultado}")
+        elif operacao == "/":
+            # Corrigido para garantir que a divisão seja mostrada corretamente
+            resultado = x / numero
+            print(f"{x * numero} / {numero} = {(x * numero) / numero:.2f}")
+        else:
+            print("Operação inválida.")
+            break
+
+def menu():
+    while True:
+        print("\nMENU")
+        print("1 - Escolher operação (+, -, *, /) para um número específico.")
+        print("2 - Ver tabuada completa de 1 a 10 com todas as operações.")
+        print("3 - Sair")
+        opcao = int(input("Digite o número da opção desejada: "))
+
+        if opcao == 1:
+            operacao = input("Qual operação você quer usar? (+, -, *, /): ")
+            numero = int(input("Qual o número da tabuada que você quer? "))
+            tabuada(numero, operacao)
+        elif opcao == 2:
+            for numero in range(1, 11):
+                print(f"\nTabuada do {numero}:")
+                operacoes = ["+", "-", "*", "/"]
+                for operacao in operacoes:
+                    tabuada(numero, operacao)
+        elif opcao == 3:
+            print("Saindo...")
+            break
+        else:
+            print("Opção inválida. Tente novamente.")
+
+
+# Executa o menu
+menu()
+def tabuada(numero, operacao):
+    print(f"Aqui está sua tabuada do {numero} com a operação '{operacao}':")
+    for x in range(1, 11):
+        if operacao == "+":
+            resultado = numero + x
+            print(f"{numero} + {x} = {resultado}")
+        elif operacao == "-":
+            resultado = numero - x
+            print(f"{x + numero} - {numero} = {(x + numero ) - numero}")
+        elif operacao == "*":
+            resultado = numero * x
+            print(f"{numero} * {x} = {resultado}")
+        elif operacao == "/":
+            # Corrigido para garantir que a divisão seja mostrada corretamente
+            resultado = x / numero
+            print(f"{x * numero} / {numero} = {(x * numero) / numero:.2f}")
+        else:
+            print("Operação inválida.")
+            break
+
+def menu():
+    while True:
+        print("\nMENU")
+        print("1 - Escolher operação (+, -, *, /) para um número específico.")
+        print("2 - Ver tabuada completa de 1 a 10 com todas as operações.")
+        print("3 - Sair")
+        opcao = int(input("Digite o número da opção desejada: "))
+
+        if opcao == 1:
+            operacao = input("Qual operação você quer usar? (+, -, *, /): ")
+            numero = int(input("Qual o número da tabuada que você quer? "))
+            tabuada(numero, operacao)
+        elif opcao == 2:
+            for numero in range(1, 11):
+                print(f"\nTabuada do {numero}:")
+                operacoes = ["+", "-", "*", "/"]
+                for operacao in operacoes:
+                    tabuada(numero, operacao)
+        elif opcao == 3:
+            print("Saindo...")
+            break
+        else:
+            print("Opção inválida. Tente novamente.")
+
+
+# Executa o menu
+menu()
