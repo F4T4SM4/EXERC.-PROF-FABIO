@@ -1,4 +1,4 @@
-def tabuada(numero, operacao):
+    def tabuada(numero, operacao):
     print(f"Aqui está sua tabuada do {numero} com a operação '{operacao}':")
     for x in range(1, 11):
         if operacao == "+":
